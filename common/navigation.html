@@ -1,0 +1,98 @@
+<div class="hide login_login">
+	<!--#include file="/login/index.html"-->
+</div>
+<div class="public_header_bg bottom_line">
+	<header class="public_header public-cell">
+		<img src="https://jinpai.b0.upaiyun.com/WeChat/1500879658790.jpg" />
+		<div class="public_primary">
+			<div class="header_top">
+				<!--<span class="public-horn-135">
+						<img src="/assets/img/index/dingwei.png"/>
+					 <select id="siteId" name="siteId">
+						<option value="838866ad-5474-41e7-9c34-e760ca61c79e" selected="selected" >北京站</option>
+					   <option>上海站</option>
+						<option>深圳站</option>
+						<option>广州站</option>
+					</select>-->
+				</span>
+				<span class="header_login">您还没登录, <i>马上登录</i></span>
+				<a href="/personal/index.html"><span class="header_personal hide"></span></a>
+				<span class="header_zhuce hide" onclick="public_edit()">退出</span>
+			</div>
+			<nav>
+				<ul>
+					<li class="index1">
+						<a href="/index.html">首页</a>
+					</li>
+					<li class="index2">
+						标准服务
+						<div class="header_erji" id="a">
+							<div class="clearfix" id="serviceId">
+
+							</div>
+						</div>
+					</li>
+					<li class="index3">
+						定制服务
+						<div class="header_erji2" id="a">
+							<div class="clearfix header_width">
+								<dl>
+									<dd>
+										<a href="/service/custom/nurse.html">家庭护士</a>
+									</dd>
+									<dd>
+										<a href="/service/custom/family.html">家庭病房</a>
+									</dd>
+									<dd>
+										<a href="/service/custom/recovery.html">定制化康复</a>
+									</dd>
+									<dd>
+										<a href="/service/custom/head.html">首长护理</a>
+									</dd>
+								</dl>
+							</div>
+						</div>
+					</li>
+					<li class="index4">
+						企业服务
+						<div class="header_erji3" id="a">
+							<div class="clearfix header_width">
+								<dl>
+									<dd>
+										<a href="/service/enterprise/match.html">赛事保障</a>
+									</dd>
+									<dd>
+										<a href="/service/enterprise/Pension.html">养老合作</a>
+									</dd>
+									<dd>
+										<a href="/service/enterprise/team.html">团体体检</a>
+									</dd>
+								</dl>
+							</div>
+						</div>
+					</li>
+					<li class="index5">
+						<a href="/news/index.html">医疗资讯</a>
+					</li>
+					<li class="index6">
+						<a href="/about/index.html">关于我们</a>
+					</li>
+					<!--<li>
+								<input type="search" readonly="readonly" title="暂未开放" />
+								<img src="/assets/img/index/sousuo.png" class="header_search" />
+							</li>-->
+				</ul>
+				<div class="line"></div>
+			</nav>
+		</div>
+	</header>
+</div>
+<script>
+	$(".header_login").click(function() {
+		$(".login_login").removeClass("hide");
+	})
+	$(".login_close").click(function() {
+		$(".login_login").addClass("hide");
+	})
+	islogin();
+</script>
